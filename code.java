@@ -34,7 +34,7 @@ public class HelloVulnServlet extends HttpServlet {
 
         // ---- Reflected XSS vulnerability ----
         String name = request.getParameter("name");
-        if (name == null) name = "World12";
+        if (name == null) name = "World123";
 
         out.println("<h1>Hello, " + name + "!</h1>");
         out.println("<p>Try changing the query string: ?name=YourName</p>");
